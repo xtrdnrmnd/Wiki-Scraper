@@ -35,7 +35,7 @@ def ScrapTheList(url):
         df = df.append(pd.Series(values, index=columns), ignore_index=True)
     # print(df)
 
-    df.to_csv(r'data/earthquakes.csv', index=False)
+    df.to_csv(r'earthquakes.csv', index=False)
 
 
 ScrapTheList("https://en.wikipedia.org/wiki/Lists_of_earthquakes")
